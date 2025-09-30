@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6383dbecec01a4396fa212c8177093a2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6383dbecec01a4396fa212c8177093a2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6383dbecec01a4396fa212c8177093a2 = L.map(
+                "map_6383dbecec01a4396fa212c8177093a2",
+                {
+                    center: [40.775307999999995, 72.34927820000001],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1e1d7713ef68f9f5e79b971d01aa1f99 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_1e1d7713ef68f9f5e79b971d01aa1f99.addTo(map_6383dbecec01a4396fa212c8177093a2);
+        
+    
+            var marker_cluster_4a96bdf5a92277140196819c2ec7300f = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_fb4afa731b2e46d560ee53b5ac33e70d = L.marker(
+                [40.825954, 72.355398],
+                {
+}
+            ).addTo(marker_cluster_4a96bdf5a92277140196819c2ec7300f);
+        
+    
+            var icon_d95754e63ea04dc49da298f2d38c86bb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_210d6283027f6a2ceee5e60cd5ffccfa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_71f5301e1698e4464269f9067aebf8d1 = $(`<div id="html_71f5301e1698e4464269f9067aebf8d1" style="width: 100.0%; height: 100.0%;">     <b>точка 1</b><br>     Широта: 40.825954<br>     Долгота: 72.355398     </div>`)[0];
+                popup_210d6283027f6a2ceee5e60cd5ffccfa.setContent(html_71f5301e1698e4464269f9067aebf8d1);
+            
+        
+
+        marker_fb4afa731b2e46d560ee53b5ac33e70d.bindPopup(popup_210d6283027f6a2ceee5e60cd5ffccfa)
+        ;
+
+        
+    
+    
+                marker_fb4afa731b2e46d560ee53b5ac33e70d.setIcon(icon_d95754e63ea04dc49da298f2d38c86bb);
+            
+    
+            var marker_1d612f7f7db14ab8eda43d4a1f0b2ffd = L.marker(
+                [40.813704, 72.329125],
+                {
+}
+            ).addTo(marker_cluster_4a96bdf5a92277140196819c2ec7300f);
+        
+    
+            var icon_ad7a345e0c098a8b0053e21c001803b8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_82130bf057bd4f9f6997f8572c9bedef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_96ee3f8747e30facc328e32ca9a6ebbd = $(`<div id="html_96ee3f8747e30facc328e32ca9a6ebbd" style="width: 100.0%; height: 100.0%;">     <b>точка 2</b><br>     Широта: 40.813704<br>     Долгота: 72.329125     </div>`)[0];
+                popup_82130bf057bd4f9f6997f8572c9bedef.setContent(html_96ee3f8747e30facc328e32ca9a6ebbd);
+            
+        
+
+        marker_1d612f7f7db14ab8eda43d4a1f0b2ffd.bindPopup(popup_82130bf057bd4f9f6997f8572c9bedef)
+        ;
+
+        
+    
+    
+                marker_1d612f7f7db14ab8eda43d4a1f0b2ffd.setIcon(icon_ad7a345e0c098a8b0053e21c001803b8);
+            
+    
+            var marker_ce500bbc28a986672c23c3c3213c0028 = L.marker(
+                [40.796339, 72.339811],
+                {
+}
+            ).addTo(marker_cluster_4a96bdf5a92277140196819c2ec7300f);
+        
+    
+            var icon_9570e10d24d294d6654ecfcac01f2d9b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aa4e8a5908c0678bd5eaec834ba7f446 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_10938157c6744eebb6e7f34a14e6d0c2 = $(`<div id="html_10938157c6744eebb6e7f34a14e6d0c2" style="width: 100.0%; height: 100.0%;">     <b>точка 3</b><br>     Широта: 40.796339<br>     Долгота: 72.339811     </div>`)[0];
+                popup_aa4e8a5908c0678bd5eaec834ba7f446.setContent(html_10938157c6744eebb6e7f34a14e6d0c2);
+            
+        
+
+        marker_ce500bbc28a986672c23c3c3213c0028.bindPopup(popup_aa4e8a5908c0678bd5eaec834ba7f446)
+        ;
+
+        
+    
+    
+                marker_ce500bbc28a986672c23c3c3213c0028.setIcon(icon_9570e10d24d294d6654ecfcac01f2d9b);
+            
+    
+            var marker_40ee68af19ccdb01f210cbe41331932c = L.marker(
+                [40.782798, 72.348175],
+                {
+}
+            ).addTo(marker_cluster_4a96bdf5a92277140196819c2ec7300f);
+        
+    
+            var icon_cf157b550e85a1c330199a12c1b3691f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1e5ae56011d11dfc39d640c14caaea5c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c532d28331de02f2d2f79820af397c1 = $(`<div id="html_4c532d28331de02f2d2f79820af397c1" style="width: 100.0%; height: 100.0%;">     <b>точка 4</b><br>     Широта: 40.782798<br>     Долгота: 72.348175     </div>`)[0];
+                popup_1e5ae56011d11dfc39d640c14caaea5c.setContent(html_4c532d28331de02f2d2f79820af397c1);
+            
+        
+
+        marker_40ee68af19ccdb01f210cbe41331932c.bindPopup(popup_1e5ae56011d11dfc39d640c14caaea5c)
+        ;
+
+        
+    
+    
+                marker_40ee68af19ccdb01f210cbe41331932c.setIcon(icon_cf157b550e85a1c330199a12c1b3691f);
+            
+    
+            var marker_74e73730d3135c7514a5bddfbaea1579 = L.marker(
+                [40.743613, 72.329941],
+                {
+}
+            ).addTo(marker_cluster_4a96bdf5a92277140196819c2ec7300f);
+        
+    
+            var icon_85c56caa08880a9d7a8fea931a09968b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_79e4e3e78838a284522e92c91d6d3e62 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_df202cc4c9464c0986c3b5d5c9d83f26 = $(`<div id="html_df202cc4c9464c0986c3b5d5c9d83f26" style="width: 100.0%; height: 100.0%;">     <b>точка 5</b><br>     Широта: 40.743613<br>     Долгота: 72.329941     </div>`)[0];
+                popup_79e4e3e78838a284522e92c91d6d3e62.setContent(html_df202cc4c9464c0986c3b5d5c9d83f26);
+            
+        
+
+        marker_74e73730d3135c7514a5bddfbaea1579.bindPopup(popup_79e4e3e78838a284522e92c91d6d3e62)
+        ;
+
+        
+    
+    
+                marker_74e73730d3135c7514a5bddfbaea1579.setIcon(icon_85c56caa08880a9d7a8fea931a09968b);
+            
+    
+            var marker_7d42f78361d27f251f3f6c61f04231f4 = L.marker(
+                [40.786761, 72.344816],
+                {
+}
+            ).addTo(marker_cluster_4a96bdf5a92277140196819c2ec7300f);
+        
+    
+            var icon_65ce8f025e71b934e96dcbefcc9dbcec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_793925923ce4ab57bbe2e639b22502dc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b0ba599a16ffc057f02e843c631c281 = $(`<div id="html_0b0ba599a16ffc057f02e843c631c281" style="width: 100.0%; height: 100.0%;">     <b>точка 6</b><br>     Широта: 40.786761<br>     Долгота: 72.344816     </div>`)[0];
+                popup_793925923ce4ab57bbe2e639b22502dc.setContent(html_0b0ba599a16ffc057f02e843c631c281);
+            
+        
+
+        marker_7d42f78361d27f251f3f6c61f04231f4.bindPopup(popup_793925923ce4ab57bbe2e639b22502dc)
+        ;
+
+        
+    
+    
+                marker_7d42f78361d27f251f3f6c61f04231f4.setIcon(icon_65ce8f025e71b934e96dcbefcc9dbcec);
+            
+    
+            var marker_272756211370ed0fcd1333b4bd469a21 = L.marker(
+                [40.780911, 72.348],
+                {
+}
+            ).addTo(marker_cluster_4a96bdf5a92277140196819c2ec7300f);
+        
+    
+            var icon_bb08b41dd1be1ef41d23b495b1180e7a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e61a52d62ff7e4d04a21d09e572e0218 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_571dd1869f40337ecddd88e8709bb289 = $(`<div id="html_571dd1869f40337ecddd88e8709bb289" style="width: 100.0%; height: 100.0%;">     <b>точка 7</b><br>     Широта: 40.780911<br>     Долгота: 72.348     </div>`)[0];
+                popup_e61a52d62ff7e4d04a21d09e572e0218.setContent(html_571dd1869f40337ecddd88e8709bb289);
+            
+        
+
+        marker_272756211370ed0fcd1333b4bd469a21.bindPopup(popup_e61a52d62ff7e4d04a21d09e572e0218)
+        ;
+
+        
+    
+    
+                marker_272756211370ed0fcd1333b4bd469a21.setIcon(icon_bb08b41dd1be1ef41d23b495b1180e7a);
+            
+    
+            var marker_4683a6f8bc5ca3ee9d325db1f225d7f3 = L.marker(
+                [40.758928, 72.345551],
+                {
+}
+            ).addTo(marker_cluster_4a96bdf5a92277140196819c2ec7300f);
+        
+    
+            var icon_65bba10b942ee924e5f4eed442610c20 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9026d4884ad5325e90883759d8cd430e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_53962b430d2bf4fd98e1fe5ff3526669 = $(`<div id="html_53962b430d2bf4fd98e1fe5ff3526669" style="width: 100.0%; height: 100.0%;">     <b>точка 8</b><br>     Широта: 40.758928<br>     Долгота: 72.345551     </div>`)[0];
+                popup_9026d4884ad5325e90883759d8cd430e.setContent(html_53962b430d2bf4fd98e1fe5ff3526669);
+            
+        
+
+        marker_4683a6f8bc5ca3ee9d325db1f225d7f3.bindPopup(popup_9026d4884ad5325e90883759d8cd430e)
+        ;
+
+        
+    
+    
+                marker_4683a6f8bc5ca3ee9d325db1f225d7f3.setIcon(icon_65bba10b942ee924e5f4eed442610c20);
+            
+    
+            var marker_6e725146fee9e795464b05a29559cacb = L.marker(
+                [40.751392, 72.344146],
+                {
+}
+            ).addTo(marker_cluster_4a96bdf5a92277140196819c2ec7300f);
+        
+    
+            var icon_2ded763ef6975b7b8177b5d4c8960bac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd9e58c0db768e35d400795f64550a6a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9554d863091701b92b90ed458fe9cdcd = $(`<div id="html_9554d863091701b92b90ed458fe9cdcd" style="width: 100.0%; height: 100.0%;">     <b>точка 9</b><br>     Широта: 40.751392<br>     Долгота: 72.344146     </div>`)[0];
+                popup_fd9e58c0db768e35d400795f64550a6a.setContent(html_9554d863091701b92b90ed458fe9cdcd);
+            
+        
+
+        marker_6e725146fee9e795464b05a29559cacb.bindPopup(popup_fd9e58c0db768e35d400795f64550a6a)
+        ;
+
+        
+    
+    
+                marker_6e725146fee9e795464b05a29559cacb.setIcon(icon_2ded763ef6975b7b8177b5d4c8960bac);
+            
+    
+            var marker_c68c50937332049d699efdc622c249ca = L.marker(
+                [40.751571, 72.363482],
+                {
+}
+            ).addTo(marker_cluster_4a96bdf5a92277140196819c2ec7300f);
+        
+    
+            var icon_9741bd56cfaa807e99fafe02b67dd154 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fa33f34543e23b78db0faf6f276cc49d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_946043a4f8af3178a7f522fc7cf64d8f = $(`<div id="html_946043a4f8af3178a7f522fc7cf64d8f" style="width: 100.0%; height: 100.0%;">     <b>точка 10</b><br>     Широта: 40.751571<br>     Долгота: 72.363482     </div>`)[0];
+                popup_fa33f34543e23b78db0faf6f276cc49d.setContent(html_946043a4f8af3178a7f522fc7cf64d8f);
+            
+        
+
+        marker_c68c50937332049d699efdc622c249ca.bindPopup(popup_fa33f34543e23b78db0faf6f276cc49d)
+        ;
+
+        
+    
+    
+                marker_c68c50937332049d699efdc622c249ca.setIcon(icon_9741bd56cfaa807e99fafe02b67dd154);
+            
+    
+            var marker_a0d06cdf7c721da98af4dee4dfb9599d = L.marker(
+                [40.764421, 72.366879],
+                {
+}
+            ).addTo(marker_cluster_4a96bdf5a92277140196819c2ec7300f);
+        
+    
+            var icon_0bfb037c3d57f1289070d3ad000312b3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b7ba5a344dc091f814e8093786f40681 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a612e1f5f7d3bbc8b57ef456ce4940b7 = $(`<div id="html_a612e1f5f7d3bbc8b57ef456ce4940b7" style="width: 100.0%; height: 100.0%;">     <b>точка 11</b><br>     Широта: 40.764421<br>     Долгота: 72.366879     </div>`)[0];
+                popup_b7ba5a344dc091f814e8093786f40681.setContent(html_a612e1f5f7d3bbc8b57ef456ce4940b7);
+            
+        
+
+        marker_a0d06cdf7c721da98af4dee4dfb9599d.bindPopup(popup_b7ba5a344dc091f814e8093786f40681)
+        ;
+
+        
+    
+    
+                marker_a0d06cdf7c721da98af4dee4dfb9599d.setIcon(icon_0bfb037c3d57f1289070d3ad000312b3);
+            
+    
+            var marker_3c2167cf71e5ea3eb3f123d29be8e4b0 = L.marker(
+                [40.773697, 72.33793],
+                {
+}
+            ).addTo(marker_cluster_4a96bdf5a92277140196819c2ec7300f);
+        
+    
+            var icon_7e436c33859d5ed745495859aac35188 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8f152be728edd35418fe444c8faa3149 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1ec826388a12143f2bd925e75a86fbd5 = $(`<div id="html_1ec826388a12143f2bd925e75a86fbd5" style="width: 100.0%; height: 100.0%;">     <b>точка 12</b><br>     Широта: 40.773697<br>     Долгота: 72.33793     </div>`)[0];
+                popup_8f152be728edd35418fe444c8faa3149.setContent(html_1ec826388a12143f2bd925e75a86fbd5);
+            
+        
+
+        marker_3c2167cf71e5ea3eb3f123d29be8e4b0.bindPopup(popup_8f152be728edd35418fe444c8faa3149)
+        ;
+
+        
+    
+    
+                marker_3c2167cf71e5ea3eb3f123d29be8e4b0.setIcon(icon_7e436c33859d5ed745495859aac35188);
+            
+    
+            var marker_1737098ba3f2e238bd97387b10c70c9c = L.marker(
+                [40.763849, 72.364406],
+                {
+}
+            ).addTo(marker_cluster_4a96bdf5a92277140196819c2ec7300f);
+        
+    
+            var icon_5b6bafbf0f58165fd538a556c9dcdd95 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b12e6a0392b792db9cd3f4049f8db2e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ce8d9b9fca6936869d2aeb139d0028fe = $(`<div id="html_ce8d9b9fca6936869d2aeb139d0028fe" style="width: 100.0%; height: 100.0%;">     <b>точка 13</b><br>     Широта: 40.763849<br>     Долгота: 72.364406     </div>`)[0];
+                popup_b12e6a0392b792db9cd3f4049f8db2e2.setContent(html_ce8d9b9fca6936869d2aeb139d0028fe);
+            
+        
+
+        marker_1737098ba3f2e238bd97387b10c70c9c.bindPopup(popup_b12e6a0392b792db9cd3f4049f8db2e2)
+        ;
+
+        
+    
+    
+                marker_1737098ba3f2e238bd97387b10c70c9c.setIcon(icon_5b6bafbf0f58165fd538a556c9dcdd95);
+            
+    
+            var marker_8128e94bd4b4ad6c6f6ef28ffa3d7f70 = L.marker(
+                [40.773885, 72.360493],
+                {
+}
+            ).addTo(marker_cluster_4a96bdf5a92277140196819c2ec7300f);
+        
+    
+            var icon_dfdb9d7e051919c38cef3a243ac8b429 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e625ee3558b78cec62c1d747b1cfb78a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cd62520efabb198246651e154d0f8a7f = $(`<div id="html_cd62520efabb198246651e154d0f8a7f" style="width: 100.0%; height: 100.0%;">     <b>точка 14</b><br>     Широта: 40.773885<br>     Долгота: 72.360493     </div>`)[0];
+                popup_e625ee3558b78cec62c1d747b1cfb78a.setContent(html_cd62520efabb198246651e154d0f8a7f);
+            
+        
+
+        marker_8128e94bd4b4ad6c6f6ef28ffa3d7f70.bindPopup(popup_e625ee3558b78cec62c1d747b1cfb78a)
+        ;
+
+        
+    
+    
+                marker_8128e94bd4b4ad6c6f6ef28ffa3d7f70.setIcon(icon_dfdb9d7e051919c38cef3a243ac8b429);
+            
+    
+            var marker_87b3ed02de5acefacc940e4d403b5f85 = L.marker(
+                [40.761797, 72.36102],
+                {
+}
+            ).addTo(marker_cluster_4a96bdf5a92277140196819c2ec7300f);
+        
+    
+            var icon_6a79adc4cb2242f93265b17b830096c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c344d17ae4f1606ed3bcc6861e7a1036 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_685e90078274c2259916e4322e05ef13 = $(`<div id="html_685e90078274c2259916e4322e05ef13" style="width: 100.0%; height: 100.0%;">     <b>точка 15</b><br>     Широта: 40.761797<br>     Долгота: 72.36102     </div>`)[0];
+                popup_c344d17ae4f1606ed3bcc6861e7a1036.setContent(html_685e90078274c2259916e4322e05ef13);
+            
+        
+
+        marker_87b3ed02de5acefacc940e4d403b5f85.bindPopup(popup_c344d17ae4f1606ed3bcc6861e7a1036)
+        ;
+
+        
+    
+    
+                marker_87b3ed02de5acefacc940e4d403b5f85.setIcon(icon_6a79adc4cb2242f93265b17b830096c4);
+            
+    
+            marker_cluster_4a96bdf5a92277140196819c2ec7300f.addTo(map_6383dbecec01a4396fa212c8177093a2);
+        
+</script>
+</html>
